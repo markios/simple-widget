@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+        <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <meta property="og:image" content="http://img-a.zeebox.com/images/z/f5ae81de-7bb2-431a-8b3d-0c41a0c7695d.jpg" />
+        <meta property="og:description" content="See the cool new stats center in zeebox" />
+        <title>widget title</title>
+        <meta name="description" content=""/>
+        <link rel="stylesheet" href=""/>
+        <script>
+        document.getElementsByTagName('link')[0].href = /dev=/.test(window.location.search) ? './style/style.css' : './style/style.min.css';
+        </script>
+        <!--[if IE]><link rel="stylesheet" href="./style/all-ie.css"><![endif]-->
+        <!--[if IE 8]><link rel="stylesheet" href="./style/8ie.css"><![endif]-->
+    </head>
+    <body>
+        <!-- Main container. -->
+        <section class="loading">
+            <div class="loader"><div id="progressBar"></div></div>
+            <div class="message">Loading...</div>
+        </section>
+        <section class="menu">
+            <ul>
+                <li><input data-rel="option1" type="radio" name="tabGroup1" id="rad1" checked="checked"/><label data-rel="voting" for="rad1">item one</label></li>
+                <li><input data-rel="option2" type="radio" name="tabGroup1" id="rad2"/><label data-rel="voting" for="rad2">Item one</label></li>
+                <li><input data-rel="option3" type="radio" name="tabGroup1" id="rad3"/><label data-rel="voting" for="rad3">Item three</label></li>
+            </ul>
+        </section>
+        <div class="wrapper">
+            <div class="menu-button">
+                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                 width="41.231px" height="29.929px" viewBox="0 0 41.231 29.929" enable-background="new 0 0 41.231 29.929" xml:space="preserve">
+                <rect x="3.385" y="3.236" fill="#231F20" width="34.887" height="5.021"/>
+                <rect x="3.385" y="12.662" fill="#231F20" width="34.887" height="5.021"/>
+                <rect x="3.385" y="22.088" fill="#231F20" width="34.887" height="5.021"/>
+                </svg>
+            </div>
+            <header>
+                <div class="title"></div>
+            </header>
+        </div> 
+        <script src='/openbox/vendor/require/2.1.5/minified/require.js'></script>
+        <script>require(['scripts/main' + (/dev=/.test(location.search) ? '' : '-built')]);</script>
+        <link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Aldrich' rel='stylesheet' type='text/css'>
+    </body>
+</html>

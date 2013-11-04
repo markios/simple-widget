@@ -1,0 +1,74 @@
+.main-sprite(@size:139px){
+	background: url(./images/sprites@2x.png) no-repeat;
+	background-size:@size;
+}
+
+.medal-sprite(){
+	.main-sprite();
+	background-position: 0 0;
+	width: 28px;
+	height: 41px;
+}
+
+.medal-sprite-small(){
+	.main-sprite(100px);
+	background-position: 0 0;
+	width: 28px;
+	height: 31px;
+}
+
+.clock-sprite() {
+	.main-sprite();
+	background-position: 0 -88px;
+	width: 33px;
+	height: 42px;
+}
+
+.clock-sprite-small() {
+	.main-sprite(100px);
+	background-position: 0 -63px;
+	width: 26px;
+	height: 31px;
+}
+
+.pitstop-black-sprite() {
+	.main-sprite();
+	background-position: 0 -43px ;
+	width: 35px;
+	height: 42px;
+}	
+
+.pitstop-gray-sprite(){
+	.main-sprite();
+	background-position: -36px -43px ;
+	width: 35px;
+	height: 42px;
+}
+
+.wrench-sprite(){
+	.main-sprite();
+	background-position: -41px -105px;
+	width: 20px;
+	height: 17px;
+}
+
+.ribbon-sprite() {
+	.main-sprite();
+	background-position: 0 -133px ;
+	width: 138px;
+	height: 34px;
+}
+
+.start-sprite() {
+	.main-sprite();
+	background-position: 0px -169px ;
+	width: 96px;
+	height: 18px;
+}
+
+.starting-grid{
+	.main-sprite();
+	background-position: 0 -192px ;
+	width: 64px;
+	height: 49px;
+}

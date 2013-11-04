@@ -1,0 +1,12 @@
+.loading.ready {
+	top:-100%;
+	display:none;
+}
+
+.image-shot::before {
+  display:none;
+}
+
+.image-shot .hotspot .label::before{
+	display:none;
+}

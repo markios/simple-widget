@@ -1,0 +1,45 @@
+
+
+.menu {
+    background-color:@grayDark;
+    color:@white;
+    height:100%;
+    position:fixed;
+    width:200px;
+    ul {
+    	li {
+			label {
+            	line-height: 3rem;
+				text-decoration: none;
+				color:@white;
+				padding-left:1.5rem;
+				width:100%;
+				display:block;
+			}
+    	}
+    }
+}
+
+.menu ul li > input[type="radio"] {
+    display:none;
+}
+
+/* Checked tabs must be white with the bottom border removed */
+.menu ul li > input[type="radio"]:checked + label {
+    background-color:#000;
+}
+
+
+// web ipad: ;
+@media only screen and (min-width: 620px){
+ 	.menu {
+        
+ 	}
+}
+
+/* Mobile */
+@media only screen and (min-width: 300px) and (max-width: 610px) {
+    .menu {
+        
+    }
+}

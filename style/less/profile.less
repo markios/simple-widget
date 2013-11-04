@@ -1,0 +1,497 @@
+.profile {
+	background-color:@white;
+	
+
+	/*remove when done*/
+	// background-image:url(./images/info_bk.jpg);
+	// background-repeat:no-repeat;
+
+
+	.super {
+		vertical-align: top;
+		font-size: 0.5em;
+	}
+
+	.driver-details {
+		position: relative;
+		.position {
+			width:100%;
+			font-family: 'Oswald', arial;
+			.name {
+				text-align: center;
+				margin:0 auto;
+				text-transform: uppercase;
+				height: 32px;
+				position: relative;
+			}
+			.pos_cur {
+				width: 56px;
+				font-size: 26px;
+				color: #ed040a;
+				position: absolute;
+				span {
+					font-size: 15px;
+					line-height: 28px;
+					padding-left: 3px;
+					vertical-align: top;
+				}
+				span.pos_name {
+					color:@red;
+					font-size:12px;
+					display:block;
+					padding:0;
+					margin-top: -5px;
+					line-height: 12px;
+					text-transform: uppercase;
+				}
+			}
+			.abandoned-message, .inpit-message, .ontrack-message {
+				display:none;
+				text-align: center;
+				position: relative;
+				top: 54px;
+				text-transform: uppercase;
+				font-size: 11px;
+				span {
+					position: relative;
+					top: -2px;
+				}
+			}
+			.abandoned-message {
+				color:@red;
+			}
+			.inpit-message {
+				color:@orange;
+			}
+			.ontrack-message {
+				color:@green;
+			}
+			.driver-pic {
+				position: absolute;
+				background-position: right -6px;
+				background-repeat: no-repeat;
+				background-size: 45px;
+				width:45px;
+				height:46px;
+				.rounded(25px);
+			}
+			.constructor {
+				height:30px;
+				width:100%;
+				position: relative;
+				text-align:center;
+				.flag {
+					padding:0 5px 0 30px;
+					background: url(./images/flags@2x.png) no-repeat;
+					background-size: 21px 160px;
+					height: 12px;
+					text-transform: uppercase;
+					font-size: 13px;
+					line-height: 12px;
+					-moz-box-sizing:border-box;
+					margin-top: 19px;
+					display:inline-block;
+					overflow: hidden;
+					white-space: nowrap;
+					&::before {
+						 content: '';
+						 display: inline-block;
+						 height: 100%; 
+						 vertical-align: middle;
+						 margin-right: -0.25em;
+					}
+					&.ESP {
+						background-position: 0 -14px;
+					}
+					&.GBR {
+						background-position: 0 -27px;
+					}
+					&.FIN {
+						background-position: 0 -40px;
+					}
+					&.AUS {
+						background-position: 0 -54px;
+					}
+					&.BRA {
+						background-position: 0 -68px;
+					}
+					&.SWZ {
+						background-position: 0 -62px;
+					}
+					&.ENG {
+						background-position: 0 -74px;
+					}
+					&.MEX {
+						background-position: 0 -107px;
+					}
+					&.FRA {
+						background-position: 0 -121px;
+					}
+					&.VEN {
+						background-position: 0 -135px;
+					}
+					&.NED {
+						background-position: 0 -148px;
+					}
+				}
+			}
+		}
+		.infographics {
+			padding: 0 12px;
+			box-sizing:border-box;
+			font-family:Oswald, arial;
+			p {
+				text-align: center;
+				font-size:13px;
+				text-transform: uppercase;
+			}
+			p.sub {
+				color:@grayMiddle;
+				margin: 0 0;
+				font-size:11px;
+				font-family:arial;
+			}
+			.pit-stops {
+				width:50%;
+				float:left;
+				p:not(.sub) {
+					margin: 0;
+				}
+				.pit-wrapper {
+					width:67px;
+					margin:0 auto;
+					overflow:hidden;
+					height: 54px;
+					ul {
+						display:table-cell;
+						vertical-align: middle;
+						width:100%;
+						height:60px;
+						li {
+							display:inline-block;
+							list-style: none;
+							.wrench-sprite();
+						}
+					}
+				}
+			}
+			.grid-position {
+				width:50%;
+				float:left;
+				.grid-graphic {
+					width:100%;
+					height:40px;
+					margin:0 auto;
+					.starting-grid();
+				}
+				span {
+					display:inline-block;
+					width:30px;
+					padding-top: 24px;
+					font-size:11px;
+					text-align: center;
+				}
+				p:not(.sub) {
+					margin: 5px 0 0;
+				}
+			}
+			.fastest-time {
+				float:left;
+				width:50%;
+				margin-top: 20px;
+				padding-top: 42px;
+				position: relative;
+				&::before {
+					content:"";
+					position: absolute;
+					top:4px;
+					left: 50%;
+					margin-left: -12px;
+					.clock-sprite-small();
+				}
+				.lap-time {
+					text-align: center;
+					font-family: Oswald, arial;
+					font-size:28px;
+					color:@red;
+					line-height: 1.1em;
+				}
+				p {
+					margin: 5px 0 0;
+				}
+			}
+			.fastest-rank {
+				float:left;
+				width:50%;
+				margin-top: 20px;
+				padding-top: 42px;
+				position: relative;
+				&::before {
+					content:"";
+					position: absolute;
+					top:6px;
+					left:50%;
+					margin-left:-14px;
+					.medal-sprite-small();
+				}
+				.rank {
+					text-align: center;
+					font-size:30px;
+					position: relative;
+					top: -7px;
+					color:@red;
+					height:30px;
+				}
+				p {
+					width: 70px;
+					line-height: 1.1em;
+					margin: 0 auto;
+					position: relative;
+					top: 8px;
+				}
+			}	
+		}
+		.team {
+			position: relative;
+			top: 21px;
+			padding-left: 6px;
+			.car img {
+				width:188px;
+			}
+			.team-name {
+				text-transform: uppercase;
+				font-size:14px;
+				line-height: 15px;
+			}
+		}
+		
+		.profile-nav {
+			height:55px;
+			width:100%;
+			.next, .prev {
+				position: absolute;
+				top:5px;
+				cursor:pointer;
+				&.disabled {
+					opacity: 0.2;
+				}
+			}
+			.next {
+				right:10px;
+			}
+			.prev {
+				left:10px;
+			}
+			span {
+				display: inline-block;
+				width:100%;
+				text-align: center;
+				line-height: 66px;
+				font-size: 11px;
+				color:@grayMiddle;
+			}
+		}
+		&.abandoned {
+			.position {
+				.abandoned-message {
+					display:block;
+				} 
+			}
+		}
+		&.ontrack {
+			.position {
+				.ontrack-message {
+					display:block;
+				} 
+			}
+		}
+		&.in-pit {
+			.position {
+				.inpit-message {
+					display:block;
+				}	
+			}
+		}
+	}
+}
+
+
+// web ipad: ;
+@media only screen and (min-width: 620px){
+ 	.profile {
+ 		position: fixed;
+ 		left:603px;
+ 		height:100%;
+ 		top:0;
+ 		width:280px;
+	    .position {
+	    	top: 30px;
+	    	height:150px;
+	    	.name {
+	    		top:22px;
+	    		font-size: 29px;
+	    		width: 148px;
+				line-height: 30px;
+	    	}
+	    	.constructor {
+	    		top:42px;
+	    	}
+	    }
+ 		.driver-details {
+			width:100%;
+			top:178px;
+			.top-shadow();
+			left: -5px;
+			padding-left: 5px;
+		}
+ 		.pos_name {
+	    	font-size: 15px;
+			line-height: 26px;
+	    }
+	    .pos_cur {
+	    	top: 15px;
+	    	left: 225px;
+	    }
+	    .driver-pic {
+	    	top: 21px;
+			left: 22px;
+	    }
+	    .infographics {
+			height:240px;
+			width:100%;
+	    }
+ 		.profile-nav {
+			top:0;
+			position: relative;
+			span {
+				font-size: 13px;
+				font-weight: bold;
+			}
+		}
+ 		.mobile-title {
+			display:none;
+ 		}
+ 	}
+}
+
+/* Mobile */
+@media only screen and (min-width: 300px) and (max-width: 610px) {
+    .profile {
+  //   	background-image:url(./images/info_bk_m.jpg);
+		// background-repeat:no-repeat;
+    	position: fixed;
+    	overflow:auto;
+    	width:100%;
+    	z-index: 4;
+    	height:100%;
+    	left:-100%;
+    	top:0;
+    	.driver-details {
+			width:300px;
+			height:100%;
+			margin:0 auto;
+			overflow-x: hidden;
+			&.ontrack {
+				.position .pos_grid::after{
+					background-position:0 9px;
+					font-size:15px;
+				}
+			}
+			&.abandoned {
+				.position .pos_grid::after{
+					background-position:0 9px;
+					font-size:15px;
+				}
+			}
+			.profile-nav {
+				span {
+					font-size: 13px;
+					font-weight: bold;
+				}
+			}
+			.infographics {
+				.fastest-time, .fastest-rank {
+					margin-top: 10px;
+				}
+			}
+		    .profile-nav {
+				bottom:15px;
+				position: absolute;
+				.next {
+					right:0;
+				}
+				.prev {
+					left:0;
+				}
+	 		}
+		}
+    	.transistion(left, 0.3s, 0.3s);
+		-webkit-transform: translate3d(0, 0, 0);
+		&.in {
+	    	left:0;
+	    }
+	    .position {
+	    	position: relative;
+	    	height: 143px;
+	    	.name {
+	    		top:0;
+	    		width: 170px;
+	    		font-size: 37px;
+				line-height: 43px;
+	    	}
+	    	.pos_name {
+		    	font-size: 20px;
+				line-height: 30px;
+		    }
+		    .pos_cur {
+		    	top: 0px;
+				right:-12px;
+		    }
+		    .driver-pic {
+		    	top:2px;
+		    }
+		    .pos_grid {
+		    	font-size: 19px;
+				line-height: 34px;
+			}
+			.constructor {
+				top:43px;
+			}
+		}
+	 	.mobile-title {
+	    	position: relative;
+	    	height:47px;
+	    	top:0;
+	    	left:0;
+	    	.back {
+	    		cursor:pointer;
+	    		position: absolute;
+	    		left: -6px;
+				top: 5px;
+	    	}
+			span {
+				text-align: center;
+				display:inline-block;
+				font-family:Oswald, arial;
+				width:100%;
+				font-weight:bold;
+				text-align: center;
+		    	font-size:16px;
+				height: 100%;
+				line-height: 44px;
+			}
+	    }
+    }
+}
+
+@media (min-height: 400px) and (max-height: 420px) {
+	.profile {
+		.driver-details {
+			.infographics {
+				height: 40%;
+				max-height: 250px;
+				overflow:auto;
+			}
+		}
+	}
+}
